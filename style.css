@@ -1,0 +1,97 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+.choice-grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.choice-grid div{
+    display: flex ;
+    flex-direction: column;
+    width:calc(32.5% - 66px); /* [(border-left + padding-left)*3 + (border-right + padding-right)*3]=66px */
+    justify-content: space-between;
+    margin-bottom:20px;
+    flex-grow: 1;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+
+}
+
+section .checked{
+    display: flex ;
+    flex-direction: column;
+    width:calc(32.5% - 66px); 
+    justify-content: space-between;
+    margin-bottom:20px;
+    flex-grow: 1;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+
+}
+
+section .unchecked{
+    display: flex ;
+    flex-direction: column;
+    width:calc(32.5% - 66px); 
+    justify-content: space-between;
+    margin-bottom:20px;
+    flex-grow: 1;
+    background-color: #cfe3ff;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    opacity: 0.6;
+}
+
+article .results{
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.results div{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.results div button{
+    height: 50px;
+    background-color: #cecece;
+}
+
+.results div button:hover{
+background-color: #e0e0e0;
+}
+
+
+
+@media(max-width:700px) { 
+    body{
+        width: 95%;
+    }
+    article header div{
+        display: none;
+    }
+}
+
+@media(max-width:500px) {
+    body{
+        width: 95%;
+    }
+    article header div{
+        display: none;
+    }
+    .choice-grid div{
+        width:calc(49% - 66px);
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+}
+
