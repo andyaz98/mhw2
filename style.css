@@ -27,7 +27,7 @@ section .checked{
     justify-content: space-between;
     margin-bottom:20px;
     flex-grow: 1;
-    background-color: #f4f4f4;
+    background-color: #cfe3ff;
     border: 1px solid #dcdcdc;
     padding: 10px;
 
@@ -40,7 +40,7 @@ section .unchecked{
     justify-content: space-between;
     margin-bottom:20px;
     flex-grow: 1;
-    background-color: #cfe3ff;
+    background-color: #f4f4f4;
     border: 1px solid #dcdcdc;
     padding: 10px;
     opacity: 0.6;
